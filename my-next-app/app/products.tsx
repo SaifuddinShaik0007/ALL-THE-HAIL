@@ -25,6 +25,7 @@ const Products: React.FC<{ addToCart: (product: Product) => void }> = ({ addToCa
         {products.map((product) => (
           <div key={product.id} className="product">
            
+           
             <h2>{product.title}</h2>
             <p>${product.price.toFixed(2)}</p>
             <button onClick={() => addToCart(product)}>Add to Cart</button>
